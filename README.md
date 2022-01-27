@@ -2,8 +2,8 @@
 Projet Site Web Backstreet Boys
 
 ## Équipe
-* Dominic Roberts
-* Meryem Berbiche
-* Jean-Christophe Zephir
+* Dominic Roberts (BLEU)
+* Meryem Berbiche (ROUDGE)
+* Jean-Christophe Zephir (VERT)
 
 [Optimisation web - Backstreet Boys](https://smnarnold.com/projets/megazord)
