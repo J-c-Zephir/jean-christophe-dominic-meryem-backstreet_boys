@@ -13,6 +13,7 @@
 picture{
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
 img{
@@ -37,4 +38,18 @@ img{
 
 .row{
     height: 100%;
+}
+
+.colonne{
+    position: relative;
+    color: white;
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+
+button:hover{
+    background-color: rgb(255, 218, 218);
 }
