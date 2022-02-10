@@ -21,6 +21,7 @@ picture {
     position: absolute;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 img {
@@ -29,11 +30,25 @@ img {
     object-fit: cover;
 }
 
-div {
-    position:absolute;
-    z-index: -1;
+.degrade { 
+    background-image: linear-gradient(rgba(175, 200, 225, 0.5), rgba(20, 50, 75, 1));
+    position: absolute;
+    z-index: 1;
     width: 100%;
-    height: 100%
+    height: 100%;
+}
+
+.container , .row { 
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.titre {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (orientation: landscape) {
