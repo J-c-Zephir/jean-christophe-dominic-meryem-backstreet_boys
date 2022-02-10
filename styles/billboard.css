@@ -1,15 +1,68 @@
-
 .hero img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 50% 25%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+@media screen and (orientation: landscape) {
+  .hero {
+    height: 56.25%;
+  }
+
+  .portrait{
+    display: none;
+  }
+  
+  .darkmode{
+    display: block;
+  }
+}
+
+@media screen and (orientation: portrait) {
+.hero {
+  height: 56.25%;
+}
+
+.portrait{
+  display: block;
+}
+
+.darkmode{
+  display: none;
+}
 }
 
 
- @media screen and (orientation: landscape) {
-    .hero {
-      height: 56.25%;
-    }
-  }
- 
+.heroTxt{
+color: white;
+z-index: 1;
+position: absolute;
+top: 15px;
+}
+
+.container{
+height: 100%;
+}
+
+
+.row{
+  height: 100%;
+}
+
+
+/*Button Style*/
+.learn-more{
+background-color: #cdeefe;
+border-style: none;
+box-shadow: 1px 1px 1px 1px #888888;
+transition: 0.5s ease;
+border-radius: 2px;
+}
+
+.learn-more:hover{
+background-color: #cdeefe;
+border-style: none;
+box-shadow: 2px 2px 2px 2px #888888;
+transition-duration: 0.5s;
+}
