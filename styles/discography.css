@@ -12,7 +12,12 @@
     --Rouge: #ff0512;
 }
 
+html {
+    height: 300vh;
+}
+
 main {
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
@@ -31,8 +36,8 @@ img {
 }
 
 .degrade { 
-    background-image: linear-gradient(rgba(175, 200, 225, 0.5), rgba(20, 50, 75, 1));
     position: absolute;
+    background-image: linear-gradient(rgba(175, 200, 225, 0.5), rgba(20, 50, 75, 1));
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -41,14 +46,26 @@ img {
 .container , .row { 
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
 .titre {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 100%;
+}
+
+.navbar {
+    z-index: 2;
+    background-color: var(--BleuFonce);
+    color: var(--Bleu);
+    width: 100vw;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Bleu);
 }
 
 @media screen and (orientation: landscape) {
