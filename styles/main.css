@@ -31,3 +31,13 @@ body{
     font-family: var(--Header);
     font-size: 30px;
 }
+
+footer{
+    background-color: black;
+    opacity: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+  }
