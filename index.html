@@ -7,44 +7,75 @@
         <link rel="stylesheet" href="styles/home.css">
     </head>
     <body>
-        <main class='hero'>
+        <header class='hero'>
             <picture>
-                <source srcset="img/img_accueil_2.jpg" media="(orientation: landscape)">
-                <img src='img/img_accueil.jpg'>
+                <source class='accueil' srcset="img/img_accueil_2.jpg" media="(orientation: landscape)">
+                <img class='accueil' src='img/img_accueil.jpg'>
             </picture>
             <div class='contraste'></div>
             <div class='container'>
-                <div class='row justify-content-center'>
-                    <div class='colonne col-12 col-md-6 col-xxl-4 justify-content-center align-self-center'>
+                <div class='row justify-content-center align-items-center'>
+                    <div class='colonne col-12 col-md-6 col-xxl-4'>
                         <h1 class='title-1'>Backstreet Boys</h1>
                         <p>Backstreet Boys est le boys band le plus vendeur de toute l'histoire de la musique. Ils ont vendu plus de 130 millions d'albums à travers le monde et ont gagné plusieurs prix.</p>
-                        <button type='button' class='btn btn-danger'>En savoir plus</button>
+                        <button type='button' class='btn btn-danger' formaction='#main'>En savoir plus</button>
                     </div>
                 </div>
             </div>
-        </main>
+        </header>
         <nav class='navbar navbar-dark navbar-expand-sm sticky-top'>
-            <div class='container'>
-                <div id="mainNav" class="collapse navbar-collapse">     
-                    <a class='menu index navbar-brand' href='index.html'>Backstreet Love</a>
-                    <a class='menu discography' href='discography.html'>Discographie</a>
-                    <a class='menu palmares' href='palmares.html'>Palmarès</a>            
+            <div class='container-fluid'>
+                <div id="mainNav" class="collapse navbar-collapse">
+                    <div class='grosMenu'>     
+                        <a class='menu index navbar-brand' href='index.html'>Backstreet Love</a>
+                        <a class='menu discography' href='discography.html'>Discographie</a>
+                        <a class='menu palmares' href='palmares.html'>Palmarès</a>     
+                    </div>       
                 </div>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button> 
             </div>
         </nav>
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-6 justify-content-center align-self-center">
-                        <p>Meryem Berbiche</p>
-                        <p>Dominic Roberts</p>
-                        <p>Jean-Christophe Zephir</p>
-                        <a class="footerLien">https://github.com/J-c-Zephir/jean-christophe-dominic-meryem-backstreet_boys</a>
-                        <p>©2022</p>
+        <div class="container-fluid" id="main">
+            <div class="row justify-content-end">
+                <div class="principal col-12 col-md-9">
+                    <section>
+                    <div class="row-2">
+                        <h2 class='title-2'>Membres du groupe</h2>
                     </div>
+                    <div class="row">
+                        <div class='card'>
+                            <img src="img/brian.jpg" class="card-img-top">
+                            <div class='card-body'>
+                              <h3 class='card-title'>Titre 1</h3>
+                              <p>Description 1</p>
+                            </div>
+                            <div class="card-footer">
+                                <p>Pied 1</p>
+                            </div>
+                          </div>
+                    </div>
+                </section>
+                </div> 
+                <div class="secondaire col-3 d-none d-md-block">
+                    <img class="construction" src='img/construction.png'>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid" >
+                <div class="row text-center">
+                        <div class="text-lg-start">
+                                <p>Meryem Berbiche</p>
+                                <p>Dominic Roberts</p>
+                                <p>Jean-Christophe Zephir</p>
+                            </div>
+                            <div class="text-lg-end">
+                                <a class="footerLien">https://github.com/J-c-Zephir/jean-christophe-dominic-meryem-backstreet_boys</a>
+                                <p>©2022</p>
+                            </div>
+                        </div>
                 </div>
             </div>
         </footer>

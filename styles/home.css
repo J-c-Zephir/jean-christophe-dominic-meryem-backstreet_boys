@@ -10,7 +10,7 @@
 }
 
 html {
-  height: 300%;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -21,7 +21,7 @@ html {
 }
 
 @media (orientation: landscape) {
-  main {
+  header {
     height: 56.25vw;
   }
 }
@@ -32,7 +32,7 @@ picture {
   position: absolute;
 }
 
-img {
+.accueil {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -79,7 +79,7 @@ nav {
   margin-right: 150px;
 }
 
-a {
+.grosMenu a {
   margin-right: 150px;
 }
 
@@ -101,4 +101,32 @@ footer {
 
 .footerLien:hover {
   color: var(--Creme);
+}
+
+.construction{
+  width: 100%;
+  object-fit:cover;
+}
+
+.principal{
+  background-color: var(--Bleu);
+  height: 100%;
+}
+
+.btn{
+  scroll-behavior: smooth;
+}
+
+.card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 400px;
+  width: 200px;
+}
+
+.card-img-top{
+  width:100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
 }
