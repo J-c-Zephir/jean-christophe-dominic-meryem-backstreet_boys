@@ -73,3 +73,14 @@ a {
         height: 56.25vw;
     }
 }
+
+footer {
+    background-color: var(--Noir);
+    opacity: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--Blanc);
+}
+
