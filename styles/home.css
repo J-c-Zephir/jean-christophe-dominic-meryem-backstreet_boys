@@ -1,76 +1,104 @@
 :root {
-    --Header: 'Merriweather Sans', sans-serif;
-    --text: 'Lora', serif;
-    --Noir: #000000;
-    --Blanc: #ffffff;
-    --BleuFonce: #091925;
-    --Creme: #fefffe;
-    --Bleu: #cdeefe;
-    --Rouge: #ff0512;
-}
-html{
-    height: 300%
-}
-.hero{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+  --Header: "Merriweather Sans", sans-serif;
+  --text: "Lora", serif;
+  --Noir: #000000;
+  --Blanc: #ffffff;
+  --BleuFonce: #091925;
+  --Creme: #fefffe;
+  --Bleu: #cdeefe;
+  --Rouge: #ff0512;
 }
 
-@media (orientation: landscape) { 
-    main{
-        height: 56.25vw;
-    }
+html {
+  height: 300%;
+  overflow-x: hidden;
 }
 
-picture{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
+@media (orientation: landscape) {
+  main {
+    height: 56.25vw;
+  }
 }
 
-.contraste{
-    background-color: var(--Rouge);
-    opacity: 0.4;
-    position: absolute;
-    top:0;
-    left:0;
-    bottom: 0;
-    right: 0;
+picture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-.container{
-    height: 100%;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.row{
-    height: 100%;
+.contraste {
+  background-color: var(--Rouge);
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-.colonne{
-    position: relative;
-    color: var(--Creme);
+.container {
+  height: 100%;
 }
 
-nav{
-    background-color: #091925;
+.row {
+  height: 100%;
 }
 
-.menu{
-    color: var(--Bleu);
-    text-decoration: none;
+.colonne {
+  position: relative;
+  color: var(--Creme);
 }
 
-.menu:hover{
-    color:#50b7eb;
+nav {
+  background-color: #091925;
 }
 
-.index{
-    color:#50b7eb;
+.menu {
+  color: #739cbe;
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: var(--Creme);
+}
+
+.index {
+  color: var(--Bleu);
+  margin-right: 150px;
+}
+
+a {
+  margin-right: 150px;
+}
+
+.navbar-brand {
+  color: var(--Bleu);
+}
+
+footer {
+  background-color: var(--BleuFonce);
+  padding: 20px;
+  margin-top: 20px;
+  color: #739cbe;
+}
+
+.footerLien {
+  color: #739cbe;
+  text-decoration: none;
+}
+
+.footerLien:hover {
+  color: var(--Creme);
 }
