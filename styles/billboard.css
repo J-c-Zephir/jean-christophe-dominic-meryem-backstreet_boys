@@ -29,6 +29,17 @@
   } */
 }
 
+.card-title{
+  background-color: #82bad6;
+  color: white;
+  padding: 10px;
+}
+
+.card-body{
+margin: 0px;
+padding: 0px;
+}
+
 .active{
   color: #cdeefe;
   text-decoration: none;
@@ -37,6 +48,13 @@
 
 .active:hover{
   color: #82bad6;
+}
+
+.ytCard{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
 .nav-link{
@@ -61,6 +79,7 @@ height: 100%;
 .spritesheet{
   width: 100%;
 }
+
 .row{
   height: 100%;
 }
@@ -72,6 +91,11 @@ border-style: none;
 box-shadow: 1px 1px 1px 1px #888888;
 transition: 0.5s ease;
 border-radius: 2px;
+}
+
+h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .learn-more:hover{
@@ -115,4 +139,30 @@ footer{
 
 .enSavoirPlus{
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cardStyle{
+  color: black;
+  transition: 0.3s ease-in-out;
+  border-style: none;
+}
+
+.cardStyle:hover{
+  color: black;
+  /* box-shadow: 5px 10px #5c5858; */
+  transition-property: scale;
+  transition: 0.3s ease-in-out;
+  transform: scale(102%);
+}
+
+.cardTxt{
+  margin: 5px;
+}
+
+.imgCard{
+  width: 100%;
 }
