@@ -39,7 +39,7 @@ picture {
 }
 
 .contraste {
-  background-color: var(--Rouge);
+  background-color: var(--BleuFonce);
   opacity: 0.4;
   position: absolute;
   top: 0;
@@ -115,8 +115,8 @@ footer {
 .card {
   margin: 10px 10px;
   height: 600px;
-
-  background-color: var(--Bleu);
+  border: none;
+  background-color: transparent;
 }
 
 .card-img-top {
@@ -142,6 +142,8 @@ footer {
   text-decoration: none;
   width: 100%;
   margin-bottom: 5px;
+  background-color: transparent;
+  border: none;
 }
 
 .card-footer:hover {
@@ -200,4 +202,14 @@ footer {
 
 .swiper-button-prev{
   color: var(--Bleu);
+}
+
+.btn.btn-info{
+  background-color: var(--Bleu);
+  border-color: var(--Bleu);
+}
+
+.btn.btn-danger{
+  background-color: var(--Rouge);
+  border-color: var(--Rouge);
 }
