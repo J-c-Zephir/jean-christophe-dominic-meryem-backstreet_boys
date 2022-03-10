@@ -148,14 +148,25 @@ footer {
   color: var(--Creme);
 }
 
-.principal {
-  background-color: #82bae7;
-}
-
-.secondaire {
-  background-color: #2579be;
-}
-
 .row-2 {
   margin-top: 15px;
+}
+
+.youtube{
+  margin-top: 15px;
+}
+
+.videoYoutube{
+  height: 100%;
+  width: 100%;
+}
+
+.nom:hover{
+  color: var(--Creme);
+}
+
+
+.imgModal{
+  width: 300px;
+  margin-left:  18%;
 }
