@@ -130,6 +130,7 @@ footer {
 .foot_link {
   color: white;
   text-decoration: none;
+  font-weight: 200;
 }
 
 .foot_link:hover {
@@ -138,9 +139,17 @@ footer {
   text-decoration: none;
 }
 
+.font {
+  font-weight: 100;
+}
+
 
 .enSavoirPlus {
   scroll-behavior: smooth;
+  background: #82bad6;
+  color: black;
+  border-color: #091925;
+
 }
 
 a {
@@ -182,11 +191,21 @@ a {
   transform: scale(102%);
 }
 
-.footer_button{
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	outline: inherit;  
+.footer_button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.modalImage {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.swiper {
+  height: 300px;
 }
