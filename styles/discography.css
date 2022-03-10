@@ -113,9 +113,13 @@ section {
     width: 100%;
 }
 
-.card {
-    margin-top: 20px;
-    border: none;
+.animation {
+    object-fit: cover; 
+}
+
+.construction {
+    width: 100%;
+    object-fit: contain;
 }
 
 ul {
@@ -124,4 +128,9 @@ ul {
 
 .inCard {
     padding: 5px;
+}
+
+.credit {
+    width: 300px;
+    margin: auto;
 }
