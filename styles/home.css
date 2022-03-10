@@ -66,12 +66,12 @@ nav {
 }
 
 .menu {
-  color: #739cbe;
+  color: var(--Creme);
   text-decoration: none;
 }
 
 .menu:hover {
-  color: var(--Creme);
+  color: var(--Rouge);
 }
 
 .index {
@@ -91,11 +91,11 @@ footer {
   background-color: var(--BleuFonce);
   padding: 20px;
   margin-top: 20px;
-  color: #739cbe;
+  color: var(--Creme);
 }
 
 .footerLien {
-  color: #739cbe;
+  color: var(--Creme);
   text-decoration: none;
 }
 
@@ -164,7 +164,7 @@ footer {
 }
 
 .nom:hover{
-  color: var(--Creme);
+  color: var(--Rouge);
 }
 
 .imgModal{
