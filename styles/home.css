@@ -165,8 +165,37 @@ footer {
   color: var(--Creme);
 }
 
-
 .imgModal{
   width: 300px;
-  margin-left:  18%;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.imgPromo{
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.swiper-pagination-bullet{
+  opacity: 100%;
+  background-color: var(--Bleu);
+}
+
+.swiper-pagination-bullet-active{
+  opacity: 100%;
+  background-color: var(--BleuFonce);
+}
+
+.swiper-button-next{
+  color: var(--Bleu);
+}
+
+.swiper-button-prev{
+  color: var(--Bleu);
 }
