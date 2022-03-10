@@ -5,14 +5,40 @@
         
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/discography.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+
     </head>
     <body>
         <header>
-            <div class="degrade"></div>
-            <picture class="bkgImg">
+            
+            <!--<picture class="bkgImg">
                 <source srcset="http://2.bp.blogspot.com/-Pvlp5Vk9gqc/UGMix-J1LOI/AAAAAAAAFbI/Cu0DRSb936I/s1600/Backstreet_Boys-Backstreet_s_Back-Interior_Frontal.jpg" media="(min-width: 1000px)">
                 <img src="http://1.bp.blogspot.com/-5osf48W51E8/Tb_7bPk2_CI/AAAAAAAAAGI/JRveFiPcA5k/s1600/cover.jpg">
-            </picture>
+            </picture>-->
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!--<div class="degrade"></div>-->
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture class="bkgImg">
+                            <source srcset="http://2.bp.blogspot.com/-Pvlp5Vk9gqc/UGMix-J1LOI/AAAAAAAAFbI/Cu0DRSb936I/s1600/Backstreet_Boys-Backstreet_s_Back-Interior_Frontal.jpg" media="(min-width: 1000px)">
+                            <img src="http://1.bp.blogspot.com/-5osf48W51E8/Tb_7bPk2_CI/AAAAAAAAAGI/JRveFiPcA5k/s1600/cover.jpg">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture class="bkgImg">
+                            <source srcset="http://1.bp.blogspot.com/-5osf48W51E8/Tb_7bPk2_CI/AAAAAAAAAGI/JRveFiPcA5k/s1600/cover.jpg" media="(min-width: 1000px)">
+                            <img src="http://2.bp.blogspot.com/-Pvlp5Vk9gqc/UGMix-J1LOI/AAAAAAAAFbI/Cu0DRSb936I/s1600/Backstreet_Boys-Backstreet_s_Back-Interior_Frontal.jpg">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                ...
+                </div>
+            </div>
             
             </div>
             <div class="container titre"> 
@@ -38,12 +64,7 @@
             </nav>
         </header>
     
-        <section class="youtube">
-            <h2 class="video_titre">Vidéo</h2>
-            <div class="ratio ratio-16x9">
-                <iframe width="893" height="675" src="https://www.youtube.com/embed/4fndeDfaWCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
+        
     
         <section>
             <div class="container">
@@ -51,6 +72,7 @@
                     <div class="animation col-3 d-none d-md-block">
                         <img class="construction" src="img/construction.png">
                     </div>
+                    
                     <div class="col-12 col-md-9">
                             <div class="container">
                                 <div class="row">
@@ -151,7 +173,12 @@
             </div>
         </section>
     
-        
+        <section class="youtube">
+            <h2 class="video_titre">Vidéo</h2>
+            <div class="ratio ratio-16x9">
+                <iframe width="893" height="675" src="https://www.youtube.com/embed/4fndeDfaWCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
         
     
         <footer>
@@ -171,83 +198,87 @@
             
         </footer>
 
+        <div class="modal" id="dom" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Dominic Roberts</h3>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <picture class="dom credit">
+                            <img src="img/drompng.png">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
+                    Ok go !
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <div class="modal" id="jsay" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Jsay Z'Pheer</h3>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <picture class="jsay credit">
+                            <img src="img/jeesaypng.png">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
+                    Hell no !
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <div class="modal" id="muri" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Muryem Barbiche</h3>
+                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+                </div>
+                <div class="container">
+                    <div class="row justify content">
+                        <picture class="muri credit">
+                            <img src="img/maryampng.png">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
+                    Hell no !
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/discography.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+        
     </body>
 
-    <div class="modal" id="dom" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Dominic Roberts</h3>
-              <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <picture class="dom credit">
-                        <img src="img/drompng.png">
-                    </picture>
-                </div>
-            </div>
-            
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
-                Ok go !
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="modal" id="jsay" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Jsay Z'Pheer</h3>
-              <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <picture class="jsay credit">
-                        <img src="img/jeesaypng.png">
-                    </picture>
-                </div>
-            </div>
-            
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
-                Hell no !
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="modal" id="muri" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Muryem Barbiche</h3>
-              <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
-            </div>
-            <div class="container">
-                <div class="row justify content">
-                    <picture class="muri credit">
-                        <img src="img/maryampng.png">
-                    </picture>
-                </div>
-            </div>
-            
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
-                Hell no !
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
+    
     
     
 </html>
