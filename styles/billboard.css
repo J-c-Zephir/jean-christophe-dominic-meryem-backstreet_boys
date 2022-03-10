@@ -138,6 +138,7 @@ footer {
   text-decoration: none;
 }
 
+
 .enSavoirPlus {
   scroll-behavior: smooth;
 }
@@ -166,4 +167,26 @@ a {
 
 .imgCard {
   width: 100%;
+}
+
+.contact {
+  transition-property: scale;
+  transition: 0.3s ease-in-out;
+  transform: scale(100%);
+
+}
+
+.contact:hover {
+  transition-property: scale;
+  transition: 0.3s ease-in-out;
+  transform: scale(102%);
+}
+
+.footer_button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;  
 }
