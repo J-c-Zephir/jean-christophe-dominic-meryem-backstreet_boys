@@ -209,6 +209,21 @@ a:hover{
   width: 40%;
 }
 
-.swiper {
+
+.swiper-wrapper {
   height: 300px;
+}
+
+.swiper-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev{
+  color: #fefffe;
+}
+
+.swiper-button-next{
+  color: #fefffe;
 }
