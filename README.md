@@ -7,3 +7,6 @@ Projet Site Web Backstreet Boys
 * Jean-Christophe Zephir (VERT)
 
 [Optimisation web - Backstreet Boys](https://smnarnold.com/projets/megazord)
+
+* Couleurs
+[Couleurs - Backstreet Boys](https://coolors.co/palette/091925-fefffe-cdeefe-ff0512)

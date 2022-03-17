@@ -227,3 +227,39 @@ a:hover{
 .swiper-button-next{
   color: #fefffe;
 }
+
+.navbar-brand {
+  transition: 1.5s ease;
+  /* transition-property: background; */
+}
+
+.navbar-brand:hover {
+  /* transition: background 0.5s ease; */
+
+  background: linear-gradient(300deg, #fefffe, #cdeefe, #ff0512);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 2s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
