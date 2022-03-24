@@ -1,54 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 :root {
-  --Header: "Merriweather Sans", sans-serif;
-  --text: "Lora", serif;
-  --Noir: #000000;
-  --Blanc: #ffffff;
-  --BleuFonce: #091925;
-  --Creme: #fefffe;
-  --Bleu: #cdeefe;
-  --Rouge: #ff0512;
+    --Header: 'Merriweather Sans', sans-serif;
+    --text: 'Lora', serif;
+    --Noir: #000000;
+    --Blanc: #ffffff;
+    --BleuFonce: #091925;
+    --Creme: #fefffe;
+    --Bleu: #cdeefe;
+    --Rouge: #ff0512;
 }
 
+
+
 header {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 .bkgImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.swiper {
-  position: absolute;
-  z-index: -1;
+.swiper{
+    position: absolute;
+    z-index: -1;
 }
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.next {
-  position: absolute;
-  z-index: 3;
-}
-
-.degrade {
-  position: absolute;
-  background-image: linear-gradient(
-    rgba(175, 200, 225, 0.5),
-    rgba(20, 50, 75, 1)
-  );
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  top: 0;
+.degrade { 
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(rgba(175, 200, 225, 0.5), rgba(20, 50, 75, 1));
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
 /* .container, .row { 
@@ -57,89 +52,88 @@ img {
 } */
 
 .titre {
-  position: absolute;
-  z-index: 2;
+    position: absolute;
+    z-index: 2;
 }
 
 .alignTitre {
-  color: var(--Creme);
-  margin: 20px;
+    color: var(--Creme);
+    margin: 20px;
 }
 
 .navbar {
-  z-index: 2;
-  background-color: var(--BleuFonce);
-  color: var(--Bleu);
-  width: 100vw;
-  text-decoration: none;
+    z-index: 2;
+    background-color: var(--BleuFonce);
+    color: var(--Bleu);
+    width: 100vw;
+    text-decoration: none;
 }
 
 a {
-  text-decoration: none;
-  color: var(--Blanc);
+    text-decoration: none;
+    color: var(--Blanc);
 }
 
 @media screen and (orientation: landscape) {
-  main {
-    height: 56.25vw;
-  }
+    main {
+        height: 56.25vw;
+    }
 }
 
 footer {
-  background-color: var(--Noir);
-  opacity: 70%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: var(--Blanc);
+    background-color: var(--Noir);
+    opacity: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--Blanc);
 }
 
 section {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
 }
 
 .container {
-  /* width: 100%;
+    /* width: 100%;
     height: 100%; */
-  margin: 0px;
+    margin: 0px;
 }
 
 .album {
-  margin: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
 }
 
 .disco {
-  width: 100%;
-  height: 100%;
-  margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
 }
 
 .row {
-  width: 100%;
+    width: 100%;
 }
 
 .animation {
-  object-fit: cover;
+    object-fit: cover; 
 }
 
 .construction {
-  width: 100%;
-  object-fit: contain;
+    width: 100%;
+    object-fit: contain;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .inCard {
-  padding: 5px;
+    padding: 5px;
 }
 
 .credit {
-  width: 300px;
-  margin: auto;
+    width: 300px;
+    margin: auto;
 }
-

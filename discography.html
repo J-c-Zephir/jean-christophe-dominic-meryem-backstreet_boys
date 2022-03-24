@@ -9,24 +9,18 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/discography.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
     <header>
         <div class="degrade"></div>
-        <picture class="bkgImg">
-            <source
-                srcset="http://2.bp.blogspot.com/-Pvlp5Vk9gqc/UGMix-J1LOI/AAAAAAAAFbI/Cu0DRSb936I/s1600/Backstreet_Boys-Backstreet_s_Back-Interior_Frontal.jpg"
-                media="(min-width: 1000px)">
-            <img src="http://1.bp.blogspot.com/-5osf48W51E8/Tb_7bPk2_CI/AAAAAAAAAGI/JRveFiPcA5k/s1600/cover.jpg"
-                alt="backstreet boy album 1">
-        </picture>
+        
 
         <!-- Slider main container -->
         <div class="swiper">
             <!--<div class="next swiper-button-prev"></div>
                 <div class="prev swiper-button-next"></div>-->
-            <div class="degrade"></div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -75,32 +69,26 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
-            <div class="container">
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="mainNav" class="collapse navbar-collapse">
-                    <a href="index.html" class="nav-link">index</a>
-                    <a href="discography.html" class="nav-link">disco</a>
-                    <a href="palmares.html" class="nav-link">palma</a>
-                </div>
-            </div>
-        </nav>
+        
     </header>
 
-    <section class="youtube">
-        <h1 class="video_titre">Vidéo</h1>
-        <div class="ratio ratio-16x9">
-            <iframe width="893" height="675" src="https://www.youtube.com/embed/4fndeDfaWCg"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mainNav" class="collapse navbar-collapse">
+                <a href="index.html" class="nav-link">index</a>
+                <a href="discography.html" class="nav-link">disco</a>
+                <a href="palmares.html" class="nav-link">palma</a>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <section>
+    
+
+    <main>
         <div class="container">
             <div class="row">
                 <div class="animation col-3 d-none d-md-block">
@@ -207,11 +195,20 @@
                         </div>
                     </div>
                 </div>
-    </section>
-    </div>
+            </div>
+        </div>
 
-    </div>
-    </div>
+    </main>
+    </section>
+
+    <section class="youtube">
+        <h1 class="video_titre">Vidéo</h1>
+        <div class="ratio ratio-16x9">
+            <iframe width="893" height="675" src="https://www.youtube.com/embed/4fndeDfaWCg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </section>
 
     <footer>
@@ -299,6 +296,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/discography.js"></script>
 </body>

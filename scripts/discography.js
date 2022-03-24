@@ -4,9 +4,9 @@ let swiper = new Swiper(".swiper", {
         prevEl: '.swiper-button-prev',
     },
 
-    slideToLoop(index, speed, runCallbacks) {
-        index = 4,
-        speed = 2000,
-        runCallbacks = true
-    },
+    // slideToLoop(index, speed, runCallbacks) {
+    //     index = 4,
+    //     speed = 2000,
+    //     runCallbacks = true
+    // },
 });
