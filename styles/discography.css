@@ -51,6 +51,7 @@ img {
 } */
 
 .titre {
+    color: var(--Blanc);
     position: absolute;
     z-index: 20;
     bottom: 250px;
