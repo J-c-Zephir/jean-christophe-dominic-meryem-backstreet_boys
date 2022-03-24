@@ -72,6 +72,8 @@ body{
   .navbar-brand {
     transition: 1.5s ease;
     /* transition-property: background; */
+    font-size: larger;
+
   }
 
   .nav-link {
@@ -94,7 +96,6 @@ body{
   
   footer {
     background-color: var(--BleuFonce);
-    /* opacity: 70%; */
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -111,6 +112,10 @@ body{
     color: var(--Rouge);
     text-decoration: none;
     transition: 0.5s ease;
+  }
+
+  .active:hover {
+    color: var(--Rouge);
   }
 
   .logoNav {

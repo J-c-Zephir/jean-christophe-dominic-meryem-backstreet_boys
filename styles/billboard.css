@@ -41,15 +41,6 @@
   padding: 0px;
 }
 
-.active {
-  color: #ff0512;
-  text-decoration: none;
-  transition: 0.5s ease;
-}
-
-.active:hover {
-  color: #c71f27;
-}
 
 .ytCard {
   width: 100%;
@@ -58,13 +49,6 @@
 
 }
 
-.nav-link {
-  color: var(--Blanc);
-}
-
-.nav-link:hover {
-  color: #ff0512;
-}
 
 .heroTxt {
   color: var(--Blanc);
@@ -99,20 +83,16 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .learn-more:hover {
   background-color: #cdeefe;
   border-style: none;
   box-shadow: 2px 2px 2px 2px #888888;
   transition-duration: 0.5s;
-}
-
-footer {
-  background-color: #091925;
-  /* opacity: 70%; */
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: var(--Blanc);
 }
 
 .color_screen {
@@ -141,12 +121,6 @@ footer {
 
 .font {
   font-weight: 100;
-}
-
-.enSavoirPlus {
-  scroll-behavior: smooth;
-  color: var(--Blanc);
-  background:#ff0512;
 }
 
 a {
@@ -192,14 +166,6 @@ a:hover{
   transform: scale(102%);
 }
 
-.footer_button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: inherit;
-}
 
 .modalImage {
   display: block;
@@ -231,40 +197,8 @@ a:hover{
 .navbar-brand {
   transition: 1.5s ease;
   /* transition-property: background; */
-}
-
-.navigation{
-  background-color:#000000;
+  font-size: larger;
 }
 
 
-.navbar-brand:hover {
-  /* transition: background 0.5s ease; */
 
-  background: linear-gradient(300deg, #fefffe, #cdeefe, #ff0512);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 3s ease infinite;
-  -moz-animation: AnimationName 3s ease infinite;
-  animation: AnimationName 2s ease infinite;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
