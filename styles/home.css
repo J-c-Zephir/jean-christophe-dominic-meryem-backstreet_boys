@@ -1,55 +1,215 @@
-.hero{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+:root {
+  --Header: "Merriweather Sans", sans-serif;
+  --text: "Lora", serif;
+  --Noir: #000000;
+  --Blanc: #ffffff;
+  --BleuFonce: #091925;
+  --Creme: #fefffe;
+  --Bleu: #cdeefe;
+  --Rouge: #ff0512;
 }
 
-@media (orientation: landscape) { 
-    main{
-        height: 56.25vw;
-    }
+html {
+  height: 100%;
+  overflow-x: hidden;
 }
 
-picture{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
+@media (orientation: landscape) {
+  header {
+    height: 56.25vw;
+  }
 }
 
-.contraste{
-    background-color: #ff0512;
-    opacity: 0.4;
-    position: absolute;
-    top:0;
-    left:0;
-    bottom: 0;
-    right: 0;
+picture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-.container{
-    height: 100%;
+.accueil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.row{
-    height: 100%;
+.contraste {
+  background-color: var(--BleuFonce);
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-.colonne{
-    position: relative;
-    color: white;
+.container {
+  height: 100%;
 }
 
-button{
-    border: none;
-    background-color: white;
+.row {
+  height: 100%;
 }
 
-button:hover{
-    background-color: rgb(255, 218, 218);
+.colonne {
+  position: relative;
+  color: var(--Creme);
+}
+
+nav {
+  background-color: #091925;
+}
+
+.menu {
+  color: var(--Creme);
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: var(--Rouge);
+}
+
+.index {
+  color: var(--Bleu);
+  align-content: space-around;
+}
+
+.grosMenu a {
+  margin-right: 150px;
+}
+
+.navbar-brand {
+  color: var(--Bleu);
+}
+
+footer {
+  background-color: var(--BleuFonce);
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--Creme);
+}
+
+.footerLien {
+  color: var(--Creme);
+  text-decoration: none;
+}
+
+.footerLien:hover {
+  color: var(--Creme);
+}
+
+.construction {
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  scroll-behavior: smooth;
+}
+
+.card {
+  margin: 10px 10px;
+  height: 600px;
+  border: none;
+  background-color: transparent;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: 5px;
+  object-position: 60% 40%;
+}
+
+.scroll {
+  color: var(--Blanc);
+  text-decoration: none;
+}
+
+.scroll:hover {
+  color: var(--Blanc);
+}
+
+.card-footer {
+  color: var(--Noir);
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.card-footer:hover {
+  color: var(--Creme);
+}
+
+.row-2 {
+  margin-top: 15px;
+}
+
+.youtube{
+  margin-top: 15px;
+}
+
+.videoYoutube{
+  height: 100%;
+  width: 100%;
+}
+
+.nom:hover{
+  color: var(--Rouge);
+}
+
+.imgModal{
+  width: 300px;
+  position: relative;
+  display: block;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.imgPromo{
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.swiper-pagination-bullet{
+  opacity: 100%;
+  background-color: var(--Bleu);
+}
+
+.swiper-pagination-bullet-active{
+  opacity: 100%;
+  background-color: var(--BleuFonce);
+}
+
+.swiper-button-next{
+  color: var(--Bleu);
+}
+
+.swiper-button-prev{
+  color: var(--Bleu);
+}
+
+.btn.btn-info{
+  background-color: var(--Bleu);
+  border-color: var(--Bleu);
+}
+
+.btn.btn-danger{
+  background-color: var(--Rouge);
+  border-color: var(--Rouge);
 }
