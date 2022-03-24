@@ -70,10 +70,6 @@ nav {
   text-decoration: none;
 }
 
-.menu:hover {
-  color: var(--Rouge);
-}
-
 .index {
   color: var(--Bleu);
   align-content: space-around;
@@ -100,7 +96,7 @@ footer {
 }
 
 .footerLien:hover {
-  color: var(--Creme);
+  color: var(--Rouge);
 }
 
 .construction {
@@ -207,9 +203,4 @@ footer {
 .btn.btn-info{
   background-color: var(--Bleu);
   border-color: var(--Bleu);
-}
-
-.btn.btn-danger{
-  background-color: var(--Rouge);
-  border-color: var(--Rouge);
 }
