@@ -79,7 +79,7 @@ body{
   }
 
   .nav-link:hover {
-    color: #ff0512;
+    color: var(--Rouge);
   }
 
   /* Footer Style */
@@ -108,11 +108,19 @@ body{
   }
 
   .active {
-    color: #ff0512;
+    color: var(--Rouge);
     text-decoration: none;
     transition: 0.5s ease;
   }
 
   .logoNav {
     font-size: larger;
+  }
+
+  /* Button styles */
+
+  .enSavoirPlus {
+    scroll-behavior: smooth;
+    color: var(--Blanc);
+    background: var(--Rouge);
   }

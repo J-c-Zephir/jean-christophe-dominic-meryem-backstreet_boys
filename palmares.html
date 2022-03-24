@@ -18,7 +18,7 @@
         <div class='container-fluid heroTxt'>
             <div class='row justify-content-end'>
                 <div class='col-12 col-sm-8  col-lg-4 '>
-                    <h1>Palmarès</h1>
+                    <h1 class="title-1">Palmarès</h1>
                     <p class="">Les Backstreet Boys, l'un des groupes les plus titrés de l'histoire de la musique,
                         proposent la meilleure musique pop qui soit. Avec d'innombrables numéros 1, des tournées record,
                         de nombreux prix et des ventes mondiales de plus de 130 millions, BSB a été reconnu comme le
@@ -91,7 +91,7 @@
         <div class='row justify-content-center'>
             <div class="main_website col-9" id="main">
                 <section>
-                    <H1>Vidéo</H1>
+                    <h2 class="title-2">Vidéo</h2>
                     <div class="ratio ratio-16x9">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6M6samPEMpM"
                             title="YouTube video player" frameborder="0"
@@ -102,7 +102,7 @@
 
                 <!----------------------------------------- Swiper Slider ----------------------------------------->
                 <section>
-                    <h1>Performances</h1>
+                    <h2 class="title-2">Performances</h2>
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper ">
@@ -130,7 +130,7 @@
 
                 <!---------------------------------- SECTION VIDÉOCLIPS --------------------------------------->
                 <section>
-                    <h1>Vidéoclips</h1>
+                    <h2 class="title-2">Vidéoclips</h2>
 
                     <a href="https://www.youtube.com/watch?v=6M6samPEMpM" class="cardStyle">
                         <div class='col-sm-12 col-md-12 col-xl-12'>
@@ -143,7 +143,7 @@
                                     </div>
                                     <div class='col-lg-8'>
                                         <ul class="list-group list-group-flush">
-                                            <h3 class='card-title'>Everybody (Backstreet's Back)</h3>
+                                            <h3 class='card-title title-3'>Everybody (Backstreet's Back)</h3>
                                             <li class="list-group-item">Album : <strong>Everybody (Backstreet's Back)
                                                 </strong> </li>
                                             <li class="list-group-item">Année : <strong>May 25, 2011</strong> </li>
@@ -261,38 +261,31 @@
     </div>
 
     <!----------------------------------------- SECTION FOOTER ----------------------------------------->
+    
     <footer>
-        <div class="container">
-            <div class="footer row justify-content-center text-lg-end">
-                <!-- Jean-Christophe -->
-                <button type="button" class="footer_button" data-bs-toggle="modal" data-bs-target="#jeesay">
-                    <div class="contact text-center text-lg-start ">Jean-Christophe Zephir</div>
-                </button>
-
-
-                <!-- Meryem -->
-                <button type="button" class="footer_button" data-bs-toggle="modal" data-bs-target="#maryam">
-                    <div class="contact text-center text-lg-start ">Meryem Berbiche</div>
-                </button>
-
-
-                <!-- Dominic -->
-                <button type="button" class="footer_button" data-bs-toggle="modal" data-bs-target="#drom">
-                    <div class="contact text-center text-lg-start ">Dominic Roberts</div>
-                </button>
-
-
-                <p class=" text-center text-lg-end ">
-                    https://github.com/J-c-Zephir/jean-christophe-dominic-meryem-backstreet_boys</p>
-                <span class="copy text-center text-lg-end font">©2021</span>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 col-lg-4 text-lg-start">
+                    <p class='nom contact footer_button' data-bs-toggle="modal" data-bs-target="#maryam">Meryem Berbiche</p>
+                    <p class='nom contact footer_button' data-bs-toggle="modal" data-bs-target="#drom">Dominic Roberts</p>
+                    <p class='nom contact footer_button' data-bs-toggle="modal" data-bs-target="#jeesay">Jean-Christophe Zephir</p>
+                </div>
+                <div class="col-12 col-lg-8 text-lg-end">
+                    <p><a
+                            class="footerLien">https://github.com/J-c-Zephir/jean-christophe-dominic-meryem-backstreet_boys</a>
+                    </p>
+                    <p>©2022</p>
+                </div>
             </div>
         </div>
+        </div>
     </footer>
+
     <!-- Modal Must be at the end -->
     <div class="modal fade" tabindex="-1" id="jeesay">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <h2 class="modal-title">Jean-Christophe Zephir</h2>
+                <h2 class="modal-title title-2">Jean-Christophe Zephir</h2>
                 <div class="modal-body">
                     <img class="modalImage" src="img/jeesaypng.png" alt="photo de Jean-Christophe">
                 </div>
@@ -306,7 +299,7 @@
     <div class="modal fade" tabindex="-1" id="maryam">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <h2 class="modal-title">Meryem Berbiche</h2>
+                <h2 class="modal-title title-2">Meryem Berbiche</h2>
                 <div class="modal-body">
                     <img class="modalImage" src="img/maryampng.png" alt="photo de meryem">
                 </div>
@@ -320,7 +313,7 @@
     <div class="modal fade" tabindex="-1" id="drom">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content ">
-                <h2 class="modal-title ">Dominic Roberts</h2>
+                <h2 class="modal-title title-2">Dominic Roberts</h2>
                 <div class="modal-body">
                     <img class="modalImage" src="img/drompng.png" alt="Photo de dominic">
                 </div>
