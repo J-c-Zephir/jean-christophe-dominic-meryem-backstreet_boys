@@ -28,21 +28,21 @@
             </div>
         </div>
     </header>
-    <nav class='navbar navbar-dark navbar-expand-sm sticky-top'>
-        <div class='container-fluid'>
-            <div id="mainNav" class="collapse navbar-collapse">
-                <div class='grosMenu'>
-                    <a class='menu index navbar-brand' href='index.html'>Backstreet Love</a>
-                    <a class='menu discography' href='discography.html'>Discographie</a>
-                    <a class='menu palmares' href='palmares.html'>Palmarès</a>
-                </div>
-            </div>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
-                aria-expanded="false" aria-label="Affichage/masquage de la navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav role="navigation" class='navbar navbar-expand-sm navbar-dark sticky-top navigation'>
+        <div class='container'>
+            <a href="index.html" style="font-size: larger;" class='navbar-brand'>Backstreet Lovers </a>
+            <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                <span class="navbar-toggler-icon "></span>
             </button>
+
+            <div id="mainNav" class="collapse navbar-collapse">
+                <a href="discography.html" class='nav-link'>Discographie</a>
+                <a href="palmares.html" class="nav-link">Palmares</a>
+            </div>
         </div>
     </nav>
+
     <div class="container-fluid" id="main">
         <div class="row justify-content-end">
             <div class="principal col-12 col-md-9">
@@ -167,10 +167,10 @@
     <footer>
         <div class="container-fluid">
             <div class="row text-center">
-                <div class="col-12 col-lg-4 text-lg-start">
-                    <p class='nom' data-bs-toggle="modal" data-bs-target="#mery">Meryem Berbiche</p>
-                    <p class='nom' data-bs-toggle="modal" data-bs-target="#dom">Dominic Roberts</p>
-                    <p class='nom' data-bs-toggle="modal" data-bs-target="#jc">Jean-Christophe Zephir</p>
+                <div class="col-12 col-lg-4 text-lg-start footer_button">
+                    <p class='nom contact' data-bs-toggle="modal" data-bs-target="#mery">Meryem Berbiche</p>
+                    <p class='nom contact' data-bs-toggle="modal" data-bs-target="#dom">Dominic Roberts</p>
+                    <p class='nom contact' data-bs-toggle="modal" data-bs-target="#jc">Jean-Christophe Zephir</p>
                 </div>
                 <div class="col-12 col-lg-8 text-lg-end">
                     <p><a
@@ -182,6 +182,12 @@
         </div>
         </div>
     </footer>
+
+
+
+
+
+
     <div class="modal fade" tabindex="-1" id="mery">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">

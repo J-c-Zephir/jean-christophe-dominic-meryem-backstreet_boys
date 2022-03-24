@@ -32,7 +32,7 @@
 
 .card-title {
   background-color: #82bad6;
-  color: white;
+  color: var(--Blanc);
   padding: 10px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .nav-link {
-  color: #ffffff;
+  color: var(--Blanc);
 }
 
 .nav-link:hover {
@@ -67,7 +67,7 @@
 }
 
 .heroTxt {
-  color: white;
+  color: var(--Blanc);
   z-index: 1;
   position: absolute;
   top: 15px;
@@ -112,7 +112,7 @@ footer {
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: white;
+  color: var(--Blanc);
 }
 
 .color_screen {
@@ -124,11 +124,11 @@ footer {
 }
 
 .nav-link {
-  color: #ffffff;
+  color: var(--Blanc);
 }
 
 .foot_link {
-  color: white;
+  color: var(--Blanc);
   text-decoration: none;
   font-weight: 200;
 }
@@ -145,13 +145,13 @@ footer {
 
 .enSavoirPlus {
   scroll-behavior: smooth;
-  color: #fefffe;
+  color: var(--Blanc);
   background:#ff0512;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--Blanc);
 }
 
 a:hover{
@@ -221,17 +221,22 @@ a:hover{
 }
 
 .swiper-button-prev{
-  color: #fefffe;
+  color: var(--Blanc);
 }
 
 .swiper-button-next{
-  color: #fefffe;
+  color: var(--Blanc);
 }
 
 .navbar-brand {
   transition: 1.5s ease;
   /* transition-property: background; */
 }
+
+.navigation{
+  background-color:#000000;
+}
+
 
 .navbar-brand:hover {
   /* transition: background 0.5s ease; */
