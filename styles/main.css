@@ -112,8 +112,15 @@ body{
     font-size: larger;
   }
 
+  .imgModal{
+    width: 300px;
+    position: relative;
+    display: block;
+    margin-left:  auto;
+    margin-right: auto;
+  }
+  
   /* Button styles */
-
   .enSavoirPlus {
     scroll-behavior: smooth;
     color: var(--Blanc);
@@ -122,4 +129,9 @@ body{
 
   .contact:hover{
     color: var(--Rouge);
+  }
+
+  .btn.btn-info{
+    background-color: var(--Bleu);
+    border-color: var(--Bleu);
   }
