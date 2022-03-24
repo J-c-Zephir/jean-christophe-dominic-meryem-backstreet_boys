@@ -61,34 +61,11 @@ picture {
   color: var(--Creme);
 }
 
-nav {
-  background-color: #091925;
-}
-
-.menu {
-  color: var(--Creme);
-  text-decoration: none;
-}
-
 .index {
   color: var(--Bleu);
   align-content: space-around;
 }
 
-.grosMenu a {
-  margin-right: 150px;
-}
-
-.navbar-brand {
-  color: var(--Bleu);
-}
-
-footer {
-  background-color: var(--BleuFonce);
-  padding: 20px;
-  margin-top: 20px;
-  color: var(--Creme);
-}
 
 .footerLien {
   color: var(--Creme);
@@ -157,10 +134,6 @@ footer {
 .videoYoutube{
   height: 100%;
   width: 100%;
-}
-
-.nom:hover{
-  color: var(--Rouge);
 }
 
 .imgModal{
