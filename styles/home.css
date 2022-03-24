@@ -73,7 +73,7 @@ picture {
 }
 
 .footerLien:hover {
-  color: var(--Rouge);
+  color: var(--Creme);
 }
 
 .construction {
@@ -136,14 +136,6 @@ picture {
   width: 100%;
 }
 
-.imgModal{
-  width: 300px;
-  position: relative;
-  display: block;
-  margin-left:  auto;
-  margin-right: auto;
-}
-
 .swiper{
   width: 100%;
   height: 100%;
@@ -173,7 +165,3 @@ picture {
   color: var(--Bleu);
 }
 
-.btn.btn-info{
-  background-color: var(--Bleu);
-  border-color: var(--Bleu);
-}
