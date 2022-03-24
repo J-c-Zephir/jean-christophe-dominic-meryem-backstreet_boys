@@ -34,7 +34,7 @@
                     </picture>
                 </div>
                 <div class="swiper-slide">
-                    <picture >
+                    <picture class="img1">
                         <source
                             srcset="http://1.bp.blogspot.com/-5osf48W51E8/Tb_7bPk2_CI/AAAAAAAAAGI/JRveFiPcA5k/s1600/cover.jpg"
                             >
@@ -116,7 +116,7 @@
                                                 <li>Roll with It</li>
                                                 <li>Nobody But You</li>
                                             </ul>
-                                            <div class="btn btn-success">En savoir plus</div>
+                                            <div class="btn btn-info">En savoir plus</div>
                                         </div>
                                         <div class="col-12 col-sm-6">
                                             <picture class="disco">
@@ -145,7 +145,7 @@
                                                 <li>If You Want It to Be Good Girl (Get Yourself a Bad Boy)</li>
                                                 <li>If I Don't Have You</li>
                                             </ul>
-                                            <div class="btn btn-success">En savoir plus</div>
+                                            <div class="btn btn-info">En savoir plus</div>
                                         </div>
                                         <div class="col-12 col-sm-6 order-sm-1">
                                             <picture class="disco">
@@ -175,7 +175,7 @@
                                                 <li>No One Else Comes Close</li>
                                                 <li>The Perfect Fan</li>
                                             </ul>
-                                            <div class="btn btn-success">En savoir plus</div>
+                                            <div class="btn btn-info">En savoir plus</div>
                                         </div>
                                         <div class="col-12 col-sm-6">
                                             <picture class="disco">
@@ -187,107 +187,82 @@
                             </div>
                         </div>
                     </div>
+
+                    <section class="youtube">
+                        <h1 class="video_titre">Vidéo</h1>
+                        <div class="ratio ratio-16x9">
+                            <iframe width="893" height="675" src="https://www.youtube.com/embed/4fndeDfaWCg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </section>
                 </main>
             </div>
         </div>
 
     </section>
 
-    <section class="youtube">
-        <h1 class="video_titre">Vidéo</h1>
-        <div class="ratio ratio-16x9">
-            <iframe width="893" height="675" src="https://www.youtube.com/embed/4fndeDfaWCg"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </section>
+    
 
     <footer>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 text-center text-lg-start">
-                    <p data-bs-toggle="modal" data-bs-target="#example">Dominic Roberts</p>
-                    <p>Jean-Christophe Zephir</p>
-                    <p>Meryem Berbiche</p>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 col-lg-4 text-lg-start footer_button">
+                    <p class='nom contact' data-bs-toggle="modal" data-bs-target="#mery">Meryem Berbiche</p>
+                    <p class='nom contact' data-bs-toggle="modal" data-bs-target="#dom">Dominic Roberts</p>
+                    <p class='nom contact' data-bs-toggle="modal" data-bs-target="#jc">Jean-Christophe Zephir</p>
                 </div>
-                <div class="col-12 col-lg-6 text-center text-lg-end">
-                    <a href="https://github.com/J-c-Zephir/jean-christophe-dominic-meryem-backstreet_boys"
-                        class="nav-link repertoire">repertoire du projet</a>
-                    <span class="copy">©2021</span>
+                <div class="col-12 col-lg-8 text-lg-end">
+                    <p><a
+                            class="footerLien">https://github.com/J-c-Zephir/jean-christophe-dominic-meryem-backstreet_boys</a>
+                    </p>
+                    <p>©2022</p>
                 </div>
             </div>
         </div>
-
+        </div>
     </footer>
-    <div class="modal" id="example" tabindex="1">
-        <div class="modal-dialog">
+
+    <div class="modal fade" tabindex="-1" id="mery">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title">Titre de ma fenêtre</h2>
+                    <h3 class="modal-title title-3">Meryem Berbiche</h3>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
                 </div>
-                <picture>
-                    <img src="img/drompng.png" alt="image de Dominic">
-                </picture>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal"
-                        aria-label="Fermer la fenêtre">
-                        Ok go !
-                    </button>
+                <div class="modal-body">
+                    <img class='imgModal' src="img/maryampng.png" alt="image de meryem">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="modal" id="jsay" tabindex="-1">
-        <div class="modal-dialog">
+    <div class="modal fade" tabindex="-1" id="dom">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Jsay Z'Pheer</h3>
+                    <h3 class="modal-title title-3">Dominic Roberts</h3>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
                 </div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <picture class="jsay credit">
-                            <img src="img/jeesaypng.png" alt="image de Jean-Christophe">
-                        </picture>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
-                        Hell no !
-                    </button>
+                <div class="modal-body">
+                    <img class='imgModal' src="img/drompng.png" alt="image de meryem">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="modal" id="muri" tabindex="-1">
-        <div class="modal-dialog">
+    <div class="modal fade" tabindex="-1" id="jc">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Muryem Barbiche</h3>
+                    <h3 class="modal-title title-3">Jean-Christophe Zephir</h3>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
                 </div>
-                <div class="container">
-                    <div class="row justify content">
-                        <picture class="muri credit">
-                            <img src="img/maryampng.png" alt="image de meryem">
-                        </picture>
-                    </div>
-                </div>
-                alla
-                <div class="modal-footer">
-                    =======
-                    >>>>>>> Stashed changes
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Fermer la fenêtre">
-                        Hell no !
-                    </button>
+                <div class="modal-body">
+                    <img class='imgModal' src="img/jeesaypng.png" alt="image de meryem">
                 </div>
             </div>
         </div>
+    </div>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/discography.js"></script>
