@@ -251,13 +251,6 @@
             </div>
         </div>
         </section>
-
-
-    </div>
-
-
-    </div>
-    </div>
     </div>
 
     <!----------------------------------------- SECTION FOOTER ----------------------------------------->
@@ -266,9 +259,9 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-12 col-lg-4 text-lg-start">
-                    <p class='nom contact footer_button' data-bs-toggle="modal" data-bs-target="#maryam">Meryem Berbiche</p>
-                    <p class='nom contact footer_button' data-bs-toggle="modal" data-bs-target="#drom">Dominic Roberts</p>
-                    <p class='nom contact footer_button' data-bs-toggle="modal" data-bs-target="#jeesay">Jean-Christophe Zephir</p>
+                    <p class='contact' data-bs-toggle="modal" data-bs-target="#maryam">Meryem Berbiche</p>
+                    <p class='contact' data-bs-toggle="modal" data-bs-target="#drom">Dominic Roberts</p>
+                    <p class='contact' data-bs-toggle="modal" data-bs-target="#jeesay">Jean-Christophe Zephir</p>
                 </div>
                 <div class="col-12 col-lg-8 text-lg-end">
                     <p><a
@@ -281,49 +274,48 @@
         </div>
     </footer>
 
-    <!-- Modal Must be at the end -->
-    <div class="modal fade" tabindex="-1" id="jeesay">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <h2 class="modal-title title-2">Jean-Christophe Zephir</h2>
-                <div class="modal-body">
-                    <img class="modalImage" src="img/jeesaypng.png" alt="photo de Jean-Christophe">
-                </div>
-                <div class="modal-footer">
-                    <button data-bs-dismiss="modal" class="btn btn-success">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <div class="modal fade" tabindex="-1" id="maryam">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <h2 class="modal-title title-2">Meryem Berbiche</h2>
-                <div class="modal-body">
-                    <img class="modalImage" src="img/maryampng.png" alt="photo de meryem">
+                <div class="modal-header">
+                    <h3 class="modal-title title-3">Meryem Berbiche</h3>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
                 </div>
-                <div class="modal-footer">
-                    <button data-bs-dismiss="modal" class="btn btn-success">Fermer</button>
+                <div class="modal-body">
+                    <img class='imgModal' src="img/maryampng.png" alt="image de meryem">
                 </div>
             </div>
         </div>
     </div>
-
     <div class="modal fade" tabindex="-1" id="drom">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content ">
-                <h2 class="modal-title title-2">Dominic Roberts</h2>
-                <div class="modal-body">
-                    <img class="modalImage" src="img/drompng.png" alt="Photo de dominic">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title title-3">Dominic Roberts</h3>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
                 </div>
-                <div class="modal-footer">
-                    <button data-bs-dismiss="modal" class="btn btn-success">Fermer</button>
+                <div class="modal-body">
+                    <img class='imgModal' src="img/drompng.png" alt="image de meryem">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="jeesay">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title title-3">Jean-Christophe Zephir</h3>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+                </div>
+                <div class="modal-body">
+                    <img class='imgModal' src="img/jeesaypng.png" alt="image de meryem">
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal Must be at the end -->
     <!-- Script for Swiper -->
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'

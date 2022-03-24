@@ -154,18 +154,6 @@ a:hover{
   width: 100%;
 }
 
-.contact {
-  transition-property: scale;
-  transition: 0.3s ease-in-out;
-  transform: scale(100%);
-}
-
-.contact:hover {
-  transition-property: scale;
-  transition: 0.3s ease-in-out;
-  transform: scale(102%);
-}
-
 
 .modalImage {
   display: block;

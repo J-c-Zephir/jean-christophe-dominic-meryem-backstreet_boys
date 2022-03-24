@@ -85,14 +85,6 @@ body{
   }
 
   /* Footer Style */
-  .footer_button {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: inherit;
-  }
   
   footer {
     background-color: var(--BleuFonce);
@@ -103,9 +95,7 @@ body{
   }
 
   .contact {
-    transition-property: scale;
     transition: 0.3s ease-in-out;
-    transform: scale(100%);
   }
 
   .active {
@@ -128,4 +118,8 @@ body{
     scroll-behavior: smooth;
     color: var(--Blanc);
     background: var(--Rouge);
+  }
+
+  .contact:hover{
+    color: var(--Rouge);
   }
