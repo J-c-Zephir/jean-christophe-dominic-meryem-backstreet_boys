@@ -1,3 +1,5 @@
+// Jay See
+
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -17,4 +19,19 @@ const swiper = new Swiper('.swiper', {
     },
 
   }
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('section', {
+  scrollTrigger: {
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+    toggleActions: 'restart complete reverse reset',
+    trigger: 'section',
+  },
+  x: '100%',
+  duration: 4,
 });
