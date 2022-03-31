@@ -50,8 +50,8 @@ section.forEach(function (section) {
 
   gsap.timeline({
     scrollTrigger: {
-      trigger: 'video',
       toggleActions: 'restart complete reverse reset',
+      trigger: 'video',
     }
   })
     .from('video', { scale: 0 })
