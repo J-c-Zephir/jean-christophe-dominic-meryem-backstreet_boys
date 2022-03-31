@@ -21,17 +21,39 @@ let swiper = new Swiper(".swiper", {
 //     duration: 4,
 // });
 
-let tp5 = gsap.timeline({
-    duration: 4,
-    scrallTrigger: {
-        markers: true,
-        start: 'center',
-        end: 'center',
-        toggleActions: 'restart complete reverse reset',
-    }
+let sections = document.querySelectorAll('section');
+sections.forEach( section => {
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: section,
+            toggleActions: 'restart complete reverse reset',
+        }
+    })
+    .from(section, { opacity: 0 })
+    .to(section, { opacity: 100 })
+
+    let images = section.querySelectorAll('img');
+    images.forEach( image => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: image,
+                toggleActions: 'restart complete reverse reset',
+            }
+        })
+        .from(image, { scale: 0 })
+        .to(image, { scale: 1 })
+    })
+
+    let videos = section.querySelectorAll('iframe');
+    videos.forEach( video => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: video,
+                toggleActions: 'restart complete reverse reset',
+            }
+        })
+        .from(video, { scale: 0 })
+        .to(video, { scale: 1 })
+    })
 })
-.from('section', { x: '0%' })
-.to('section', { x: '100%' })
-.to('section', { x: '0%' })
-.from('section', { x: '100%' })
-    
+
