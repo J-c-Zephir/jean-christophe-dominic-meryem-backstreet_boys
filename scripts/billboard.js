@@ -17,21 +17,43 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 2,
       spaceBetween: 20
     },
-
   }
 });
 
 
-gsap.registerPlugin(ScrollTrigger);
+let section = document.querySelectorAll('section')
 
-gsap.to('section', {
-  scrollTrigger: {
-    markers: true,
-    start: 'top 75%',
-    end: 'bottom 25%',
-    toggleActions: 'restart complete reverse reset',
-    trigger: 'section',
-  },
-  x: '100%',
-  duration: 4,
+section.forEach(function (section) {
+
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: section,
+      start: 'top 90%',
+      end: 'bottom 90%',
+      toggleActions: 'restart complete reverse reset',
+    }
+  })
+    .from(section, { opacity: 0 })
+    .to(section, { opacity: 100 })
+
+  let images = section.querySelectorAll('section img');
+  images.forEach(function (img) {
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: img,
+        toggleActions: 'restart complete reverse reset',
+      }
+    })
+      .from(img, { scale: 0 })
+      .to(img, { scale: 1 })
+  });
+
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: 'video',
+      toggleActions: 'restart complete reverse reset',
+    }
+  })
+    .from('video', { scale: 0 })
+    .to('video', { scale: 1 })
 });
