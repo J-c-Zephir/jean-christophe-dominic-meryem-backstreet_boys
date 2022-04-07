@@ -184,3 +184,26 @@ a:hover{
   /* transition-property: background; */
   font-size: larger;
 }
+
+/* animation */
+
+.spritesheet{
+  width: 420px;
+  height: 420px;
+  background-image: url(../img/SPSHEET_scroll-up-tape.png);
+  background-position: center top;
+  background-size: cover;
+  background-position: 50% calc(50% + 111px);
+  animation: spritey 1s linear infinite ;
+  animation-timing-function: steps(24);
+}
+
+@keyframes spritey{
+  from{
+    background-position:center top;
+  }
+  to{
+    background-position: 0 10080px;
+
+  }
+}
