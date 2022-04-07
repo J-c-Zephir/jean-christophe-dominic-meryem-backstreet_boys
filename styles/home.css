@@ -61,11 +61,34 @@ picture {
   color: var(--Creme);
 }
 
+nav {
+  background-color: #091925;
+}
+
+.menu {
+  color: var(--Creme);
+  text-decoration: none;
+}
+
 .index {
   color: var(--Bleu);
   align-content: space-around;
 }
 
+.grosMenu a {
+  margin-right: 150px;
+}
+
+.navbar-brand {
+  color: var(--Bleu);
+}
+
+footer {
+  background-color: var(--BleuFonce);
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--Creme);
+}
 
 .footerLien {
   color: var(--Creme);
@@ -73,7 +96,7 @@ picture {
 }
 
 .footerLien:hover {
-  color: var(--Creme);
+  color: var(--Rouge);
 }
 
 .construction {
@@ -136,6 +159,18 @@ picture {
   width: 100%;
 }
 
+.nom:hover{
+  color: var(--Rouge);
+}
+
+.imgModal{
+  width: 300px;
+  position: relative;
+  display: block;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
 .swiper{
   width: 100%;
   height: 100%;
@@ -165,3 +200,7 @@ picture {
   color: var(--Bleu);
 }
 
+.btn.btn-info{
+  background-color: var(--Bleu);
+  border-color: var(--Bleu);
+}

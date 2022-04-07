@@ -57,3 +57,53 @@ sections.forEach( section => {
     })
 })
 
+// let animCoeur = document.querySelectorAll('.coeur');
+
+// animCoeur.forEach( (coeur, index) => {
+//     gsap.timeline({
+//         scrub: true,
+//         scrollTrigger: {
+//             markers: true,
+//             trigger: coeur,
+//         }
+//     })
+//     .to('.coeur', {y: })
+// })
+
+// essaie tp6
+
+// const body = document.querySelector('body');
+// let isScrolling;
+
+
+// window.addEventListener('scroll', function() {
+// 	window.clearTimeout( isScrolling );
+//   body.classList.add("up");
+  
+
+// 	isScrolling = setTimeout(function() {
+// 		console.log( 'Scrolling has stopped.' );
+//     body.classList.remove("up");
+//     body.classList.remove("down");
+// 	}, 250);
+// });
+
+// let anim = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.animation',
+    
+//     onUpdate: (e) => {
+      
+//       if(e.progress){
+//          if(e.direction==-1){
+//           body.classList.add("up");
+//           body.classList.remove("down");
+//         }else{
+//           body.classList.add("down");
+//           body.classList.remove("up");
+//         }
+//       }
+//     }
+  
+//   }
+// });

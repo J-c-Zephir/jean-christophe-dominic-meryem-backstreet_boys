@@ -93,13 +93,13 @@ section {
     /* width: 400px;
     height: 400px; */
     object-fit: cover; 
-    border: dotted 1px #ff8487; 
+    
 }
 .up {
     width: 400px;
     height: 400px;
     background-image: url(../img/coeur_up.png);
-    
+    border: dotted 1px #ff8487; 
     animation-name: up;
     animation-duration: 1s;
     animation-iteration-count: infinite;
