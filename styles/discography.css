@@ -95,11 +95,14 @@ section {
     object-fit: cover; 
     
 }
-.up {
+.anim {
     width: 400px;
     height: 400px;
-    background-image: url(../img/coeur_up.png);
     border: dotted 1px #ff8487; 
+}
+.up {
+    background-image: url(../img/coeur_up.png);
+    
     animation-name: up;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -110,11 +113,7 @@ section {
     to { background-position: 0 -10080px; }
 }
 .idle {
-    width: 100%;
-    height: 400px;
     background-image: url(/img/coeur_idle.png);
-    
-    margin: 5px auto;
     animation-name: idle;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -125,11 +124,7 @@ section {
     to { background-position: 0 -10080px; }
 }
 .down {
-    width: 100%;
-    height: 400px;
     background-image: url(/img/coeur_down.png);
-    
-    margin: 5px auto;
     animation-name: down;
     animation-duration: 1s;
     animation-iteration-count: infinite;

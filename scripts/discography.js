@@ -21,6 +21,8 @@ let swiper = new Swiper(".swiper", {
 //     duration: 4,
 // });
 
+
+
 let sections = document.querySelectorAll('section');
 sections.forEach( section => {
     gsap.timeline({
@@ -57,7 +59,60 @@ sections.forEach( section => {
     })
 })
 
-// let animCoeur = document.querySelectorAll('.coeur');
+let body = document.querySelector('body');
+let isScrolling;
+let scrollTrueFalse;
+let animCoeur = document.querySelector('.anim');
+
+window.addEventListener('scroll', () => {
+    window.clearTimeout(isScrolling);
+    body.classList.add('.is-scrolling');
+    console.log('scrolling');
+    scrollTrueFalse = true;
+    
+    isScrolling = setTimeout( () => {
+        console.log('scrolling has stopper');
+        scrollTrueFalse = false;
+    }, 250);
+});
+
+if (scrollTrueFalse == false) {
+    animCoeur.classList.add('idle');
+    animCoeur.classList.remove('up');
+    animCoeur.classList.remove('down');
+}
+
+
+
+
+// let animCoeur = document.querySelector('.anim');
+
+// let anim = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: 'body',
+// onUpdate: (e) => {
+        
+//         if(e.progress){
+//           // ***** Instruction 4 ***** //
+//            if(e.direction==-1){
+//             animCoeur.classList.add("up");
+//             animCoeur.classList.remove("down");
+//           }else{
+//             // ***** Instruction 5 ***** //
+//             animCoeur.classList.add("down");
+//             animCoeur.classList.remove("up");
+//           }
+//         }
+//       }
+    
+//     }
+//   });
+
+
+
+
+
+
 
 // animCoeur.forEach( (coeur, index) => {
 //     gsap.timeline({
