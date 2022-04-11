@@ -207,3 +207,24 @@ a:hover{
 
   }
 }
+
+.direction-up{
+  width: 420px;
+  height: 10080px;
+  background-image: url(../img/SPSHEET_scroll-up-tape.png);
+  background-position: center top;
+  background-size: cover;
+  background-position: 50% calc(50% + 111px);
+  animation: sprite-up 1s linear infinite ;
+  animation-timing-function: steps(24);
+}
+
+@keyframes sprite-up{
+  from{
+    background-position:center top;
+  }
+  to{
+    background-position: 0 10080px;
+
+  }
+}
