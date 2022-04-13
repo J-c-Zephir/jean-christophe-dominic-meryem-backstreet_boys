@@ -53,3 +53,31 @@ sections.forEach(function (section) {
     .from('video', { scale: 0 })
     .to('video', { scale: 1 })
 });
+
+
+const spritesheet = document.querySelector('.spritesheet');
+let scroll
+
+window.addEventListener('scroll', function() {
+  window.clearTimeout(scroll);
+	scroll = setTimeout(function() {
+    spritesheet.className = 'spritesheet';
+	}, 200);
+});
+
+let animation = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.secondaire',
+    onUpdate: (e) => {
+      if(e.progress){
+         if(e.direction == -1){
+          spritesheet.className = 'haut'
+        }else{
+          spritesheet.className = 'bas'
+        }
+      }
+    }
+  
+  }
+});
+

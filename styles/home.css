@@ -204,3 +204,35 @@ footer {
   background-color: var(--Bleu);
   border-color: var(--Bleu);
 }
+
+.spritesheet {
+  position: sticky;
+  top: 20%;
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/idle_mery.png);
+  animation: spritesheet 1s steps(24) infinite;
+}
+
+.haut {
+  position: sticky;
+  top: 20%;
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/haut_mery.png);
+  animation: spritesheet 1s steps(24) infinite;
+}
+
+.bas {
+  position: sticky;
+  top: 20%;
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/bas_mery.png);
+  animation: spritesheet 1s steps(24) infinite;
+}
+
+@keyframes spritesheet {
+  from {background-position:0px 0px}
+  to {background-position:0px -10080px}
+}
