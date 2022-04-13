@@ -35,7 +35,6 @@ sections.forEach(function (section) {
   let images = section.querySelectorAll('section img');
   images.forEach(function (img) {
     gsap.timeline({
-<<<<<<< Updated upstream
       scrollTrigger: {
         trigger: img,
         toggleActions: 'restart complete reverse reset',
@@ -54,34 +53,3 @@ sections.forEach(function (section) {
     .from('video', { scale: 0 })
     .to('video', { scale: 1 })
 });
-=======
-        scrollTrigger: {
-          trigger: section,
-          toggleActions: 'restart complete reverse reset',
-          }
-        })
-        .from(section, {opacity:0})
-        .to(section, {opacity: 100})
-
-    let images = document.querySelectorAll('section img');
-      images.forEach(function(img) {
-      gsap.timeline({
-        scrollTrigger: {
-            trigger: img,
-            toggleActions: 'restart complete reverse reset',
-            }
-      })
-      .from(img, {scale:0})
-      .to(img, {scale: 1})
-      });
-
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: 'video',
-          toggleActions: 'restart complete reverse reset',
-          }
-        })
-        .from('video', {scale:0})
-        .to('video', {scale: 1})
-  });
->>>>>>> Stashed changes
