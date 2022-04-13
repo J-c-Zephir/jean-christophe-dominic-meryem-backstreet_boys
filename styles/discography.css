@@ -99,8 +99,16 @@ section {
     width: 400px;
     height: 400px;
     border: dotted 1px #ff8487; 
-} */
+    position: sticky;
+    top: 30%;
+}  */
 .up {
+    position: sticky;
+    top: 30%;
+    width: 400px;
+    height: 400px; 
+    
+
     background-image: url(../img/coeur_up.png);
     
     animation-name: up;
@@ -113,9 +121,11 @@ section {
     to { background-position: 0 -10080px; }
 }
 .idle {
+    position: sticky;
+    top: 30%;
     width: 400px;
-    height: 400px;
-    border: dotted 1px #ff8487; 
+    height: 400px; 
+    
 
     background-image: url(../img/coeur_idle.png);
     animation-name: idle;
@@ -127,7 +137,13 @@ section {
     from { background-position: 0 0; }
     to { background-position: 0 -10080px; }
 }
-.down {
+.down { 
+    position: sticky;
+    top: 30%;
+    width: 400px;
+    height: 400px;
+    
+
     background-image: url(../img/coeur_down.png);
     animation-name: down;
     animation-duration: 1s;

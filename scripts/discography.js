@@ -66,96 +66,23 @@ let isScrolling;
 let animCoeur = document.querySelector('.anim');
 
 window.addEventListener('scroll', () => {
-    window.clearTimeout(isScrolling);
-    body.classList.add('.is-scrolling');
-    console.log('scrolling');
-
-    
-
     isScrolling = setTimeout( () => {
-        console.log('scrolling has stopper');
-        body.classList.remove('is-scrolling');
+        animCoeur.className = 'idle'
     }, 250);
 });
 
 
-// let anim = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: '.animation',
-//         onUpdate: (e) => {
-        
-//         if(e.progress){
-//           // ***** Instruction 4 ***** //
-//            if(e.direction==-1){
-//             animCoeur.classList.add("up");
-//             animCoeur.classList.remove("down");
-//             animCoeur.classList.remove("idle");
-//           }else{
-//             // ***** Instruction 5 ***** //
-//             animCoeur.classList.add("down");
-//             animCoeur.classList.remove("up");
-//             animCoeur.classList.remove("idle");
-//           }
-//         }
-//     }
-    
-//     }
-// });
-
-
-
-
-
-
-
-
-
-// animCoeur.forEach( (coeur, index) => {
-//     gsap.timeline({
-//         scrub: true,
-//         scrollTrigger: {
-//             markers: true,
-//             trigger: coeur,
-//         }
-//     })
-//     .to('.coeur', {y: })
-// })
-
-// essaie tp6
-
-// const body = document.querySelector('body');
-// let isScrolling;
-
-
-// window.addEventListener('scroll', function() {
-// 	window.clearTimeout( isScrolling );
-//   body.classList.add("up");
-  
-
-// 	isScrolling = setTimeout(function() {
-// 		console.log( 'Scrolling has stopped.' );
-//     body.classList.remove("up");
-//     body.classList.remove("down");
-// 	}, 250);
-// });
-
-// let anim = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '.animation',
-    
-//     onUpdate: (e) => {
-      
-//       if(e.progress){
-//          if(e.direction==-1){
-//           body.classList.add("up");
-//           body.classList.remove("down");
-//         }else{
-//           body.classList.add("down");
-//           body.classList.remove("up");
-//         }
-//       }
-//     }
-  
-//   }
-// });
-
+let anim = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.animation',
+        onUpdate: (e) => {
+            if (e.progress) {
+                if(e.direction==-1){
+                    animCoeur.className = "up"
+                } else {
+                    animCoeur.className = "down"
+                }
+            }
+        }
+    }
+});
