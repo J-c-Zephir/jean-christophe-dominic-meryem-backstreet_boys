@@ -188,17 +188,18 @@ a:hover{
 /* animation */
 
 .spritesheet{
+  position: sticky;
   width: 420px;
   height: 420px;
-  background-image: url(../img/SPSHEET_scroll-up-tape.png);
+  background-image: url(../img/SPSHEET_scroll-idle-tape.png);
   background-position: center top;
   background-size: cover;
   background-position: 50% calc(50% + 111px);
-  animation: spritey 1s linear infinite ;
+  animation: spriteidle 1s linear infinite ;
   animation-timing-function: steps(24);
 }
 
-@keyframes spritey{
+@keyframes spriteidle{
   from{
     background-position:center top;
   }
@@ -209,8 +210,9 @@ a:hover{
 }
 
 .direction-up{
+  position: sticky;
   width: 420px;
-  height: 10080px;
+  height: 420px;
   background-image: url(../img/SPSHEET_scroll-up-tape.png);
   background-position: center top;
   background-size: cover;
@@ -227,4 +229,30 @@ a:hover{
     background-position: 0 10080px;
 
   }
+}
+
+.direction-down{
+  position: sticky;
+  width: 420px;
+  height: 420px;
+  background-image: url(../img/SPSHEET_scroll-down-tape.png);
+  background-position: center top;
+  background-size: cover;
+  background-position: 50% calc(50% + 111px);
+  animation: sprite-down 1s linear infinite ;
+  animation-timing-function: steps(24);
+}
+
+@keyframes sprite-down{
+  from{
+    background-position:center top;
+  }
+  to{
+    background-position: 0 10080px;
+
+  }
+}
+
+.main_website{
+  position: sticky;
 }

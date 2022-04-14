@@ -59,41 +59,40 @@ section.forEach(function (section) {
 });
 
 // Callback
-const body = document.querySelector('body');
+const spritesheet = document.querySelector('.spritesheet');
 let isScrolling;
 
 // ***** Instruction 2 ***** //
-window.addEventListener('scroll', function() {
-	window.clearTimeout( isScrolling );
-  body.classList.add("is-scrolling");
-  
+window.addEventListener('scroll', function () {
+  window.clearTimeout(scroll);
+  spritesheet.className = "is-scrolling";
+
   // ***** Instruction 3 ***** //
-	isScrolling = setTimeout(function() {
-		console.log( 'Scrolling has stopped.' );
-    body.classList.remove("is-scrolling");
-	}, 250);
+  isScrolling = setTimeout(function () {
+    console.log('Scrolling has stopped.');
+    spritesheet.className = "spritesheet";
+  }, 150);
 });
 
 // ***** Instruction 1 ***** //
 let anim = gsap.timeline({
   scrollTrigger: {
-    trigger: '.level',
-    
+    trigger: '.main_website',
+
     onUpdate: (e) => {
-      
-      if(e.progress){
+
+      if (e.progress) {
         // ***** Instruction 4 ***** //
-         if(e.direction==-1){
-          body.classList.add("direction-up");
-          body.classList.remove("direction-down");
-        }else{
+        if (e.direction == -1) {
+          spritesheet.className = "direction-up";
+          spritesheet.className = "direction-down";
+        } else {
           // ***** Instruction 5 ***** //
-          body.classList.add("direction-down");
-          body.classList.remove("direction-up");
+          spritesheet.className = "direction-down";
+          spritesheet.className = "direction-up";
         }
       }
     }
-  
   }
 });
 
