@@ -103,7 +103,7 @@ section {
     top: 30%;
 }  */
 .up {
-    position: sticky;
+    position: fixed;
     top: 30%;
     width: 400px;
     height: 400px; 
@@ -121,7 +121,7 @@ section {
     to { background-position: 0 -10080px; }
 }
 .idle {
-    position: sticky;
+    position: fixed;
     top: 30%;
     width: 400px;
     height: 400px; 
@@ -138,7 +138,7 @@ section {
     to { background-position: 0 -10080px; }
 }
 .down { 
-    position: sticky;
+    position: fixed;
     top: 30%;
     width: 400px;
     height: 400px;
