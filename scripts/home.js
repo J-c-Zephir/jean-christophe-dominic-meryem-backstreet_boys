@@ -82,20 +82,33 @@ let animation = gsap.timeline({
 });
 
 let btnRecherche =  document.querySelector('.recherche');
-let titreRecherche = document.querySelector('.titre');
+let titreRecherche = document.querySelector('.titreRecherche');
+let divRecherche = document.querySelector('.paroles');
+let spinner = document.querySelector('.spinner');
 
-btnRecherche.addEventListener('click', function(){
+const newLineToBr = function(str) {
+  return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+
+btnRecherche.addEventListener('click', function(e){
   e.preventDefault();
+  spinner.style.display = 'inline-block';
   
-  if(titreRecherche.value != null){
+  if(titreRecherche.value == ''){
+    spinner.style.display = 'none';
+    titreRecherche.value = "Veuillez mettre le nom d'un titre ici";
+  }
+  else{
     fetch(`https://api.lyrics.ovh/v1/backstreet boys/${titreRecherche.value}`) 
     .then(data => data.json()) 
     .then(actor => { 
-      console.log(actor);
-    }); 
+      spinner.style.display = 'none'
+      const newParoles = newLineToBr(actor.lyrics)
+      divRecherche.innerHTML = newParoles;
+    })
+    .catch(error => {
+      spinner.style.display = 'none'
+      divRecherche.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`});
   }
-  else{
-    titreRecherche.value = "Veuillez mettre le nom d'un titre"
-  }
-
 })
+
