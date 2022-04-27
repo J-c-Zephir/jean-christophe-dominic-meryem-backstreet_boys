@@ -104,7 +104,7 @@ btnRecherche.addEventListener('click', function(e){
     .then(actor => { 
       spinner.style.display = 'none'
       const newParoles = newLineToBr(actor.lyrics)
-      divRecherche.innerHTML = newParoles;
+      divRecherche.innerHTML = `<br><h3> Paroles de: ${titreRecherche.value} </h3><br> ${newParoles};`
     })
     .catch(error => {
       spinner.style.display = 'none'
