@@ -81,3 +81,21 @@ let animation = gsap.timeline({
   }
 });
 
+let btnRecherche =  document.querySelector('.recherche');
+let titreRecherche = document.querySelector('.titre');
+
+btnRecherche.addEventListener('click', function(){
+  e.preventDefault();
+  
+  if(titreRecherche.value != null){
+    fetch(`https://api.lyrics.ovh/v1/backstreet boys/${titreRecherche.value}`) 
+    .then(data => data.json()) 
+    .then(actor => { 
+      console.log(actor);
+    }); 
+  }
+  else{
+    titreRecherche.value = "Veuillez mettre le nom d'un titre"
+  }
+
+})
