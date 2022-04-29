@@ -86,3 +86,31 @@ let anim = gsap.timeline({
         }
     }
 });
+
+// tp8
+
+const newLineToBr = function(str){
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+
+let btn = document.querySelector('.btnForm')
+let div = document.querySelector('.divTP8')
+let spinner = document.querySelector('.spinner-border')
+btn.addEventListener('click', e => {
+    e.preventDefault()
+    spinner.style.display = 'inline-block';
+    let text = document.querySelector('.text')
+    console.log(text.value)
+    fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
+        .then(data => data.json())
+        .then(data => {
+            spinner.style.display = 'none'
+            let paroles = newLineToBr(data.lyrics)
+            console.log(paroles)
+            div.innerHTML = paroles
+        })
+        .catch(error => {
+            spinner.style.display = 'none'
+            div.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`
+        })
+})
