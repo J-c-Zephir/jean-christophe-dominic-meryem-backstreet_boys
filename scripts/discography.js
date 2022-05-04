@@ -100,17 +100,22 @@ btn.addEventListener('click', e => {
     e.preventDefault()
     spinner.style.display = 'inline-block';
     let text = document.querySelector('.text')
-    console.log(text.value)
-    fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
+    console.log(text.value) 
+    if (text == "") {
+        spinner.stye.display = "none"
+        text.placeholder = "titre de chanson!!"
+    } else {
+        fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
         .then(data => data.json())
         .then(data => {
             spinner.style.display = 'none'
             let paroles = newLineToBr(data.lyrics)
-            console.log(paroles)
             div.innerHTML = paroles
         })
         .catch(error => {
             spinner.style.display = 'none'
             div.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`
         })
+    }
+    
 })
