@@ -96,3 +96,71 @@ let anim = gsap.timeline({
   }
 });
 
+
+
+// Paroles d'une chanson me
+
+// // Changer les codes New line par des BR
+const newLineToBr = function (str) {
+  return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+
+// Je Déclare des variables
+let btn = document.querySelector('.btn-primary')
+let div = document.querySelector('.divTP8')
+let spinner = document.querySelector('.spinner-border')
+
+
+
+fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
+  .then(actor => actor.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.log(error);
+  })
+
+btn.addEventListener("click", function (e) {
+  e.preventDefault()
+  console.log('nais')
+});
+
+
+
+// // Paroles d'une chanson mery
+// const newLineToBr = function (str) {
+//   return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+// }
+
+// // Déclaration de variables
+// let btn = document.querySelector('.btnForm')
+// let div = document.querySelector('.divTP8')
+// let spinner = document.querySelector('.spinner-border')
+
+
+
+
+
+
+// btn.addEventListener('click', e => {
+//   e.preventDefault()
+
+//   spinner.style.display = 'inline-block';
+//   let text = document.querySelector('.text')
+//   console.log(text.value)
+
+//   fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
+//     .then(data => data.json())
+//     .then(data => {
+//       spinner.style.display = 'none'
+//       let paroles = newLineToBr(data.lyrics)
+//       console.log(paroles)
+//       div.innerHTML = paroles
+//     })
+
+//     .catch(error => {
+//       spinner.style.display = 'none'
+//       div.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`
+//     })
+// })
