@@ -100,7 +100,7 @@ let anim = gsap.timeline({
 
 // Paroles d'une chanson me
 
-// // Changer les codes New line par des BR
+// Changer les codes New line par des BR
 const newLineToBr = function (str) {
   return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
 }
@@ -112,21 +112,38 @@ let spinner = document.querySelector('.spinner-border')
 
 
 
-fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
+btn.addEventListener("click", function (e) {
+  e.preventDefault()
+  spinner.classList.remove('visually-hidden');
+
+  console.log('nais')
+  fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
   .then(actor => actor.json())
   .then(data => {
     console.log(data);
+    div.innerHTML = newLineToBr(data)
+
+    // ajout de visually hidden lorsque les informations entre pour afficher les lyrics
+  spinner.classList.add('visually-hidden');
   })
   .catch(error => {
     console.log(error);
+    div.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison:${error}`
+    spinner.classList.add('visually-hidden');
   })
 
-btn.addEventListener("click", function (e) {
-  e.preventDefault()
-  console.log('nais')
 });
 
 
+// let paroles = document.querySelector(".rechercher");
+
+// paroles.addEventListener("click", function(e) {
+//   e.preventDefault();
+//   if(){
+//     fetch("https://api.lyrics.ovh/v1/");
+//   }
+
+// });
 
 // // Paroles d'une chanson mery
 // const newLineToBr = function (str) {
@@ -137,11 +154,6 @@ btn.addEventListener("click", function (e) {
 // let btn = document.querySelector('.btnForm')
 // let div = document.querySelector('.divTP8')
 // let spinner = document.querySelector('.spinner-border')
-
-
-
-
-
 
 // btn.addEventListener('click', e => {
 //   e.preventDefault()
