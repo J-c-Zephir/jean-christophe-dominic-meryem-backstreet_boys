@@ -97,9 +97,6 @@ let anim = gsap.timeline({
 });
 
 
-
-// Paroles d'une chanson me
-
 // Changer les codes New line par des BR
 const newLineToBr = function (str) {
   return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
@@ -107,72 +104,42 @@ const newLineToBr = function (str) {
 
 // Je Déclare des variables
 let btn = document.querySelector('.btn-primary')
-let div = document.querySelector('.divTP8')
 let spinner = document.querySelector('.spinner-border')
+let paroles = document.querySelector('.paroles')
+let recherche = document.querySelector('.recherche')
 
-
-
+// Onclick
 btn.addEventListener("click", function (e) {
   e.preventDefault()
   spinner.classList.remove('visually-hidden');
 
-  console.log('nais')
-  fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
-  .then(actor => actor.json())
-  .then(data => {
-    console.log(data);
-    div.innerHTML = newLineToBr(data)
+  // Si il n'y a rien dans ma recherche afficher un message
+  if (recherche.value == '') {
 
-    // ajout de visually hidden lorsque les informations entre pour afficher les lyrics
-  spinner.classList.add('visually-hidden');
-  })
-  .catch(error => {
-    console.log(error);
-    div.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison:${error}`
     spinner.classList.add('visually-hidden');
-  })
+    recherche.value = "Veuillez insérer le nom d'une chanson ici";
+  }
+  // Rechercher les paroles  
+  else {
+    fetch(`https://api.lyrics.ovh/v1/backstreet boys/${recherche.value}`)
+      .then(actor => actor.json())
+      .then(data => {
+        console.log(data);
+        const parolesChanson = newLineToBr(data.lyrics)
+
+        // afficher les paroles dans le site
+        paroles.innerHTML = `<br><h3> Paroles de: ${recherche.value} </h3><br> ${parolesChanson};`
+        spinner.classList.add('visually-hidden');
+
+      })
+
+      .catch(error => {
+        console.log(error);
+        paroles.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison:${error}`
+
+        // ajout de visually hidden lorsque les informations entre pour afficher une erreur ou les lyrics
+        spinner.classList.add('visually-hidden');
+      });
+  }
 
 });
-
-
-// let paroles = document.querySelector(".rechercher");
-
-// paroles.addEventListener("click", function(e) {
-//   e.preventDefault();
-//   if(){
-//     fetch("https://api.lyrics.ovh/v1/");
-//   }
-
-// });
-
-// // Paroles d'une chanson mery
-// const newLineToBr = function (str) {
-//   return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
-// }
-
-// // Déclaration de variables
-// let btn = document.querySelector('.btnForm')
-// let div = document.querySelector('.divTP8')
-// let spinner = document.querySelector('.spinner-border')
-
-// btn.addEventListener('click', e => {
-//   e.preventDefault()
-
-//   spinner.style.display = 'inline-block';
-//   let text = document.querySelector('.text')
-//   console.log(text.value)
-
-//   fetch(`https://api.lyrics.ovh/v1/backstreet boys/${text.value}`)
-//     .then(data => data.json())
-//     .then(data => {
-//       spinner.style.display = 'none'
-//       let paroles = newLineToBr(data.lyrics)
-//       console.log(paroles)
-//       div.innerHTML = paroles
-//     })
-
-//     .catch(error => {
-//       spinner.style.display = 'none'
-//       div.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`
-//     })
-// })
