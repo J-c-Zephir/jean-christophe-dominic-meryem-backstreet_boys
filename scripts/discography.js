@@ -96,6 +96,7 @@ const newLineToBr = function(str){
 let btn = document.querySelector('.btnForm')
 let div = document.querySelector('.divTP8')
 let spinner = document.querySelector('.spinner-border')
+spinner.style.display = 'none'
 btn.addEventListener('click', e => {
     e.preventDefault()
     spinner.style.display = 'inline-block';
@@ -110,7 +111,7 @@ btn.addEventListener('click', e => {
         .then(data => {
             spinner.style.display = 'none'
             let paroles = newLineToBr(data.lyrics)
-            div.innerHTML = paroles
+            div.innerHTML = `<br><h3>${text.value}</h3><br>${paroles}`
         })
         .catch(error => {
             spinner.style.display = 'none'
