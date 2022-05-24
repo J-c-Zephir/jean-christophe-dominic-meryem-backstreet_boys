@@ -96,3 +96,49 @@ let anim = gsap.timeline({
   }
 });
 
+
+// Changer les codes New line par des BR
+const newLineToBr = function (str) {
+  return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+
+// Je Déclare des variables
+let btn = document.querySelector('.btn-primary')
+let spinner = document.querySelector('.spinner-border')
+let paroles = document.querySelector('.paroles')
+let recherche = document.querySelector('.recherche')
+
+// Onclick
+btn.addEventListener("click", function (e) {
+  e.preventDefault()
+  spinner.classList.remove('visually-hidden');
+
+  // Si il n'y a rien dans ma recherche afficher un message
+  if (recherche.value == '') {
+
+    spinner.classList.add('visually-hidden');
+    recherche.value = "Veuillez insérer le nom d'une chanson ici";
+  }
+  // Rechercher les paroles  
+  else {
+    fetch(`https://api.lyrics.ovh/v1/backstreet boys/${recherche.value}`)
+      .then(actor => actor.json())
+      .then(data => {
+        console.log(data);
+        const parolesChanson = newLineToBr(data.lyrics)
+
+        // afficher les paroles dans le site
+        paroles.innerHTML = `<br><h3> Paroles de: ${recherche.value} </h3><br> ${parolesChanson};`
+        spinner.classList.add('visually-hidden');
+
+      })
+
+      .catch(error => {
+        console.log(error);
+        paroles.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison:${error}`
+
+        // ajout de visually hidden lorsque les informations entre pour afficher une erreur ou les lyrics
+        spinner.classList.add('visually-hidden');
+      });
+  }
+});
