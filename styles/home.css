@@ -152,6 +152,7 @@ footer {
 
 .youtube{
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .videoYoutube{
@@ -235,4 +236,13 @@ footer {
 @keyframes spritesheet {
   from {background-position:0px 0px}
   to {background-position:0px -10080px}
+}
+
+.titreRecherche{
+  width: 350px;
+  display: inline-block;
+}
+
+.spinner{
+  display: none;
 }
